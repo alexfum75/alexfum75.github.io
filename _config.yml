@@ -100,10 +100,8 @@ analytics:
 author:
   name             : "Alessandro Fumagalli"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Alessandro Fumagalli è laureato in ingegneria ed appassionato di astronomia e astronautica dai tempi del Grand Tour delle sonde Voyager. Dal 2004 è socio attivo e conferenziere del GAV (Gruppo Astrofili di Villasanta) per i corsi base ed avanzati
-di astronomia organizzati dal gruppo. Progettista software/firmware con più di 25 anni di esperienza in nella gestione di simulazioni software, possiede ottime competenze nello sviluppo di protocolli di comunicazione proprietari/standard affiancata da una solida preparazione matematica per con anni di esperienza
-per implementazione di algoritmi statistici e di analisi dei dati. Attualmente lavora con metodologie Agile (Scrum) ed abbraccia la cultura DevOps per lo sviluppo e rilascio di prodotti IT di alta qualità per sistemi di produzione TAM.
-Da Aprile 2025 possiede la certificazione PMI - CAPM ©"
+  bio              : "Laureato in ingegneria ed appassionato di astronomia e astronautica dai tempi del Grand Tour delle sonde Voyager. Dal 2004 è socio e conferenziere del GAV (Gruppo Astrofili di Villasanta). Progettista software/firmware con più di 25 anni di esperienza possiede ottime competenze nello sviluppo di protocolli di comunicazione ed una solida preparazione matematica
+per implementazione di algoritmi statistici e di analisi dei dati. Da Aprile 2025 possiede la certificazione PMI - CAPM ©"
   location         : "Monza (MB)"
   email            :
   links:
