@@ -12,17 +12,17 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Articoli di astronomia"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Appunti, note, fogli sparsi di astronomia ed astronautica" 
 name                     : "Alessandro Fumagalli"
 description              : "Sito associato al libretto di astronomia: Astronomia per tutti"
-url                      : https://alexfum75.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://alexfum75.github.io/articolidiastronomia # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -304,3 +304,12 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/      
+
+codehead_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/your-custom-head-script.js
+
+teaser: /assets/images/500x300.png
+
+logo: "/assets/images/logo.jpg"
+
