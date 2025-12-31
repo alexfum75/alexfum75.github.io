@@ -100,8 +100,7 @@ analytics:
 author:
   name             : "Alessandro Fumagalli"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Laureato in ingegneria ed appassionato di astronomia e astronautica dai tempi del Grand Tour delle sonde Voyager. Dal 2004 è socio e conferenziere del GAV (Gruppo Astrofili di Villasanta). Progettista software/firmware con più di 25 anni di esperienza possiede ottime competenze nello sviluppo di protocolli di comunicazione ed una solida preparazione matematica
-per implementazione di algoritmi statistici e di analisi dei dati. Da Aprile 2025 possiede la certificazione PMI - CAPM ©"
+  bio              : "Laureato in ingegneria ed appassionato di astronomia e astronautica dai tempi  delle Voyager. Dal 2004 è socio e conferenziere del Gruppo Astrofili di Villasanta. Progettista software/firmware con ottime esperienza nello sviluppo di protocolli di comunicazione ed una solida preparazione matematica per implementazione di algoritmi statistici e analisi dei dati. PMI - CAPM ©"
   location         : "Monza (MB)"
   email            :
   links:
@@ -109,8 +108,8 @@ per implementazione di algoritmi statistici e di analisi dei dati. Da Aprile 202
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Sito personale"
-      icon: "fas fa-fw fa-link"
-      url: "www.articolidiastronomia.com"
+      #icon: "fas fa-fw fa-link"
+      #url: "www.articolidiastronomia.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/alexfum75"
