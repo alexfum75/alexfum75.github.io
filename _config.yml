@@ -292,6 +292,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: ""
@@ -312,4 +313,3 @@ codehead_scripts:
 teaser: /assets/images/500x300.png
 
 logo: "/assets/images/logo.jpg"
-
