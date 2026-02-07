@@ -1,17 +1,12 @@
 # main links
   main:
-  - title: "Quick-Start Guide"
+  - title: "Menu1"
     url: /docs/quick-start-guide/
-  - title: "Posts"
+  - title: "Menu2"
     url: /year-archive/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
+  #- title: "Categories"
+  #  url: /categories/
+  - title: "Menu3"
     url: /tags/
-  - title: "Pages"
+  - title: "Menu4"
     url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "Sito personale"
-    url: https://articolidiastronomia.com
-    target: _blank
