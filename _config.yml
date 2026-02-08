@@ -201,7 +201,7 @@ timezone: Europe/Rome # https://en.wikipedia.org/wiki/List_of_tz_database_time_z
 
 # Pagination with jekyll-paginate
 paginate: 1 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
