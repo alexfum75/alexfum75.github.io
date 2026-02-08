@@ -1,13 +1,9 @@
 ---
 title: "Foo Bar Identity"
-header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
-sidebar:
 gallery:
-  - url: /assets/images/avatar.png
+  - url: assets/images/avatar.png
     image_path:  assets/images/avatar.png
-  - url:  /assets/images/logo.jpeg
+  - url:  assets/images/logo.jpeg
     image_path: assets/images/logo.jpeg
 ---
 
