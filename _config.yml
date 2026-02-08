@@ -259,6 +259,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
    enabled:
@@ -308,6 +309,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/      
+  archives:
+    output: true
+    permalink: /archives/:path/
 
 codehead_scripts:
   - https://code.jquery.com/jquery-3.2.1.min.js
