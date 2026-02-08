@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date: 2026-02-08 14:00:00 -0000
-categories: immagini
+title:  "primo post!"
+categories: 
+  - blog
+tags:
+  - benvenuto
 ---
 
 # Welcome
