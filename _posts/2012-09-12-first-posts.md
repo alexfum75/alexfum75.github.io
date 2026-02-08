@@ -13,5 +13,4 @@ tags:
 
 I hope you like it!
 
-... which is shown in the screenshot below:
-![eliofanogafo](assets/images/eliofanografo.jpg)
+... which is shown in the screenshot below: ![eliofanogafo](/assets/images/eliofanografo.jpg)
