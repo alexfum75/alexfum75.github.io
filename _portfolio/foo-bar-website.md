@@ -1,9 +1,9 @@
 ---
 title: "Foo Bar Identity"
 gallery:
-  - url: assets/images/avatar.png
+  - url: /assets/images/avatar.png
     image_path:  /assets/images/avatar.png
-  - url:  assets/images/logo.jpeg
+  - url:  /assets/images/logo.jpeg
     image_path: /assets/images/logo.jpeg
 ---
 
