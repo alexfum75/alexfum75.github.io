@@ -285,7 +285,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: portfolio
+      type: post
     values:
       layout: single
       author_profile: true
@@ -294,6 +294,8 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar:
+        nav: "my_sidebar"
   # _pages
   - scope:
       path: ""
