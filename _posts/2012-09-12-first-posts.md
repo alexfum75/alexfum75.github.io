@@ -10,4 +10,4 @@ title:  "Welcome to Jekyll!"
 I hope you like it!
 
 ... which is shown in the screenshot below:
-![eliofanogafo](/assets/eliofanografo.jpg)
+![eliofanogafo](/assets/images/eliofanografo.jpg)
