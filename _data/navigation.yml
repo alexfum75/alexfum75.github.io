@@ -10,3 +10,8 @@
     url: /posts/
   - title: "Sito"
     url: http://articolidiastronomia.com
+  my_sidebar:
+  - title: "About"
+    url: /about/
+  - title: "Categories"
+    url: /categories/
