@@ -7,6 +7,7 @@ categories:
   - blog
 tags:
   - eliofano
+author_profile: true 
 ---
 
 This post has a header image!
