@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating a Post with Header Image"
 header: 
-  image: /assets/images/eliofanografo.jpeg
+  image: /assets/images/eliofanografo.jpg
 categories: 
   - blog
 tags:
