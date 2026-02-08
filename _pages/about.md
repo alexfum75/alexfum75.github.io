@@ -1,5 +1,7 @@
 ---
 layout: single
 title: about
+permalink: /about/
+author_profile: true
 ---
-pagina di about
+Pagina di about me stesso
