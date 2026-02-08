@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a Post with Header Image"
+title:  "Post with Header Image"
 header: 
   image: /assets/images/eliofanografo.jpg
 categories: 
