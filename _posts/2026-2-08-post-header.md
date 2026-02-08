@@ -11,3 +11,5 @@ author_profile: true
 ---
 
 This post has a header image!
+
+Take a look at [Article 2](/pages/about.md) for more information
