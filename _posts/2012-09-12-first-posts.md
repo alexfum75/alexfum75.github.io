@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: posts
 title:  "primo post!"
-categories: 
-  - blog
+permalink: /posts/2023/09/12/first-post/
+date: 2023-09-12
 tags:
   - benvenuto
 ---

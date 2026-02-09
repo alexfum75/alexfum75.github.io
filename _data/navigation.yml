@@ -1,17 +1,20 @@
-# main links
-  main:
+main:
   - title: "About"
     url: /about/
+
   - title: "portfolio"
     url: /portfolio/
+
   - title: "Contact"
     url: /contact/
+
   - title: "Post"
-    url: /posts/
-  - title: "Sito"
-    url: http://articolidiastronomia.com
-  my_sidebar:
-  - title: "About"
-    url: /about/
-  - title: "Categories"
-    url: /categories/
+    url: /year-archive/
+
+  - title: "tendina"
+    url: /year-archive/
+    dropdown:
+      - title: Blog Grid #child menu
+        url: /blog #child menu link
+      - title: Blog Details
+        url: /post01

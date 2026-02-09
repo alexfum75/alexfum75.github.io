@@ -1,15 +1,18 @@
 ---
-layout: post
+layout: posts
 title:  "Post with Header Image"
+author_profile: true 
+permalink: /posts/2026/02/08/post-header/
 header: 
   image: /assets/images/eliofanografo.jpg
-categories: 
-  - blog
 tags:
   - eliofano
-author_profile: true 
 ---
 
 This post has a header image!
 
-Take a look at [Article 2](/pages/about.md) for more information
+Take a look at [Article 2](/posts/2012-09-12-first-posts) for more information.
+
+# OPTION
+
+here new link: [MySite](http://articolidiastronomia.com)
