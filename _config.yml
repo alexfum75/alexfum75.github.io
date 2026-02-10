@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "it-IT"
 # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-site_theme               : "sunrise"
+site_theme               : "default"
 title                    : "Articoli di astronomia"
 title_separator          : "-"
 subtitle                 : "Appunti, note, fogli sparsi di astronomia ed astronautica" 
@@ -23,7 +23,7 @@ atom_feed:
   hide                   : true # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : false # true, false (default) 
-search_provider          : # lunr (default), algolia, google
+search_provider          : google # lunr (default), algolia, google
 
 author:
   # Biographic information
@@ -155,6 +155,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  math_engine: mathjax
 
 
 # These settings control the types of collections used by the template
@@ -241,6 +242,7 @@ permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: Europe/Rome
+
 
 
 # Plugins
