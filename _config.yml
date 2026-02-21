@@ -9,7 +9,8 @@
 # Basic Site Settings
 locale                   : "it-IT"
 # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-site_theme               : "default"
+#site_theme               : "default"
+remote_theme             : "mmistakes/minimal-mistakes"
 title                    : "Articoli di astronomia"
 title_separator          : "-"
 subtitle                 : "Appunti, note, fogli sparsi di astronomia ed astronautica" 
