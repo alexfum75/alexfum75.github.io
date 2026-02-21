@@ -15,8 +15,8 @@ title_separator          : "-"
 subtitle                 : "Appunti, note, fogli sparsi di astronomia ed astronautica" 
 name                     : "Alessandro Fumagalli"
 description              : "Sito associato al libretto di astronomia: Astronomia per tutti"
-url                      : web_astronomia #https://alexfum75.github.io/web_astronomia/
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : https://alexfum75.github.io #https://alexfum75.github.io/web_astronomia/
+baseurl                  : /web_astronomia # the subpath of your site, e.g. "/blog"
 repository               : #
 atom_feed:
   path                   : # blank (default) uses feed.xml
