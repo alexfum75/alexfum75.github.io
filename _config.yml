@@ -9,15 +9,14 @@
 # Basic Site Settings
 locale                   : "it-IT"
 # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-#site_theme               : "default"
-remote_theme             : "mmistakes/minimal-mistakes"
+site_theme               : "default"
 title                    : "Articoli di astronomia"
 title_separator          : "-"
 subtitle                 : "Appunti, note, fogli sparsi di astronomia ed astronautica" 
 name                     : "Alessandro Fumagalli"
 description              : "Sito associato al libretto di astronomia: Astronomia per tutti"
-url                      : https://alexfum75.github.io #https://alexfum75.github.io/web_astronomia/
-baseurl                  : /web_astronomia # the subpath of your site, e.g. "/blog"
+url                      : https://alexfum75.github.io
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #
 atom_feed:
   path                   : # blank (default) uses feed.xml
