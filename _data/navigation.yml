@@ -18,15 +18,6 @@ main:
     - subtitle: "Example2"
       subhref: "#"
 
-  - title: "UNO"
-    sublinks:
-      - title: Docker
-        url: /docker/
-      - title: Kubernetes
-        url: /kubernetes/
-      - title: OpenStack
-        url: /openstack/
-
   - title: "Talks"
     url: /talks/    
 
