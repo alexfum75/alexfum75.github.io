@@ -11,6 +11,11 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "UNO"
+    url: /uno/
+    - title: "DUE"
+      url: /due/
+
   - title: "Talks"
     url: /talks/    
 
