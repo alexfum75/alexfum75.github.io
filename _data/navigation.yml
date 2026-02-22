@@ -12,9 +12,13 @@ main:
     url: /publications/
 
   - title: "UNO"
-    url: /uno/
-    - title: "DUE"
-      url: /due/
+    sublinks:
+      - title: Docker
+        url: /docker/
+      - title: Kubernetes
+        url: /kubernetes/
+      - title: OpenStack
+        url: /openstack/
 
   - title: "Talks"
     url: /talks/    
