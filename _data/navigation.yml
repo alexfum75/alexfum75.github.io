@@ -14,9 +14,7 @@ main:
   - title: "Snippets"
     subcategories:
       - subtitle: "Example1"
-        subhref: "#"
-      - subtitle: "Example2"
-        subhref: "#"
+        url: /publications/
 
   - title: "Talks"
     url: /talks/    
