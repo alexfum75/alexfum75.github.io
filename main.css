@@ -1,0 +1,7 @@
+p {
+  text-align: justify
+}
+
+.navbar li.nav-item a.nav-link span {
+  color: rgb(0, 0, 0) !important;
+}

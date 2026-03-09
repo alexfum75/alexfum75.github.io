@@ -1,0 +1,16 @@
+---
+css: main.css   
+---
+
+# Benvenuti 
+<!--# Benvenuti {.unnumbered}-->
+
+Questo è il sito web della prima edizione di **"Astronomia per tutti"**. Questo sito web è gratuito, con licenza [CC BY-NC-ND 3.0](https://creativecommons.org/licenses/by-nc-nd/3.0/us/). Se desideri una copia fisica del libro, puoi ordinarla [qui](https://). Se apprezzi la lettura gratuita del libro e desideri restituire qualcosa, fai una donazione [qui](https://)
+
+Mi chiamo Alessandro Fumagalli. Sono laureato in ingegneria ed appassionato di astronomia e astronautica dai tempi del Grand Tour delle sonde Voyager. Socio e conferenziere del GAV (Gruppo Astrofili di Villasanta). Progettista software/firmware con esperienza pluridecennale di progettazione e sviluppo algoritmi statistici e di analisi dei dati.
+
+<!--[This is a span that has the class aside which places it in the margin without a footnote number.]{.aside}-->
+
+Possiede una consolidata esperienza in metodologie Agile (Scrum) ed abbraccia la cultura DevOps per lo sviluppo e rilascio di prodotti IT di alta qualita’ per sistemi di produzione TAM
+
+Nell’Aprile 2025 ha ottenuto la certificazione PMI – CAPM®

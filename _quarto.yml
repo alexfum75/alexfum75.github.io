@@ -1,0 +1,127 @@
+project:
+  type: book
+  output-dir: docs
+  preview:
+    port: 4200
+    browser: true
+
+execute:
+  freeze: auto
+  cache: true
+
+book:
+  edition: 1
+  favicon: cover.png
+  title: "Il cielo per tutti"
+  subtitle: "Piccolo zibaldone di astronomia e astronautica"
+  date-format: long
+  page-navigation: true
+  image: cover.png
+  publisher: "Editore"
+  license: "CC BY-NC"
+  sidebar:
+    background: light
+    search: false
+    style: docked
+    collapse-level: 6
+    border: true
+  cover-image: cover.png
+  repo-actions: [issue]
+  repo-url: https://github.com/alexfum75/test_book
+  repo-branch: gh-pages
+  reader-mode: true
+
+  page-footer: 
+    border: true
+    center: "Copyright 2026, Alessandro Fumagalli" 
+    left: | 
+      written by Alessandro Fumagalli
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+
+  chapters:
+    - index.qmd  
+
+    - introduzione.qmd
+    
+    - part: "Vicino a noi"
+      chapters:
+        - TerraDintorni.qmd
+        - SistemaTerraLuna.qmd
+        - FratelliTerra.qmd
+        - AltriMondi.qmd
+
+    - part: "Il planetario"
+      chapters:
+        - MisuraTempo.qmd      
+        - PilloleFisica.qmd
+        - MeccanicaCeleste.qmd
+
+    - part: "Oltre noi"
+      chapters:
+        - Stelle.qmd
+        - Universo.qmd
+        - Costellazioni.qmd
+
+    - part: "Biografie" 
+      chapters:
+        - Dante.qmd
+        - Biografie.qmd
+
+    - part: "Astronautica"  
+      chapters:
+      - Sovietici.qmd
+      - ProgrammaArtemis.qmd
+      - ProgrammaApollo.qmd
+      - AndiamoMarte.qmd      
+    
+    - glossario.qmd
+
+    - indice.qmd
+    
+    - appendici.qmd
+
+  navbar:
+    logo: logo.jpeg
+    left:
+      - text: "Il libro"
+        href: index.qmd
+      - text: "Conferenze"
+        href: conferenze.qmd
+        
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/alessandrofumagalli/
+      - icon: avatar.png
+
+    background: light
+    border: true
+    search: false
+    tools:
+      - icon: github
+        href: https://github.com/
+
+#bibliography: references.bib
+format:
+  html:
+    grid:
+      sidebar-width: 300px
+      body-width: 800px
+      margin-width: 400px
+      gutter-width: 1.5rem  
+    toc: true
+    toc-location: right
+    toc-title: "Contents"
+    #toc-depth: 5
+    #respect-user-color-scheme: true
+    theme:
+      dark:
+        - cosmo  #slatr
+        - solar.scss
+      light: yeti #spacelab
+
+  #pdf:
+  #  documentclass: scrreprt
+  
+reference-location: margin
+citation-location: margin
