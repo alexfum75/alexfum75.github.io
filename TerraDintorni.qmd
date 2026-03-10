@@ -38,7 +38,8 @@ Un pianeta è un corpo celeste che:
 
 1. è in orbita attorno al Sole.
 2. Possiede una massa sufficiente \affinche la sua gravità gli faccia assumere una forma di equilibrio idrostatico (quasi sferica).
-3. \textit{Ha ripulito} lo spazio intorno alla sua orbita.</div>
+3. \textit{Ha ripulito} lo spazio intorno alla sua orbita.
+</div>
 
 In base a questa definizione Plutone non soddisfa il terzo requisito,
 quindi nell'agosto 2006 è stato declassato a pianeta nano. definiamo
@@ -199,8 +200,8 @@ Temperatura) ancora lo consentono, ma poco a poco le condizioni di
 temperatura favoriscono la condensazione e le gocce si accumulano in
 terra ed in atmosfera. Col tempo si forma un unico immenso oceano:
 questo lo sappiamo dall'analisi isotopica dell'ossigeno (esso si
-presenta in natura sotto forma di tre isotopi: $\ce{ ^{16}O}$,
-$\ce{ ^{17}O}$ e $\ce{ ^{18}O}$) intrappolato all'interno dello rocce
+presenta in natura sotto forma di tre isotopi: ($\ce{^{16}O}$,
+$\ce{^{17}O}$ e $\ce{^{18}O}$) intrappolato all'interno dello rocce
 contenente zirconio, un minerale durissimo e uno dei più antichi
 presenti sulla Terra[^6].\
 Dato che la Terra in quel periodo era in grado di trattenere acqua allo
@@ -212,10 +213,11 @@ la Terra dovesse avere un'atmosfera molto densa e ricca di e con una
 condizione (P,T) in grado di sostenere l'acqua allo stato liquido
 (paradosso del Sole debole).
 
-<div style="background-color: #ffe0b2; text-align: justify; padding: 15px; border-radius: 8px; border: 1px solid #ffb74d; color: #333333;">
-<strong>Adeano</strong><br>
+::: {.callout-note}
+## Adeano
 La Terra cambia nuovamente colore, l'immenso oceano le dona un colore
-[azzurro]{style="color: RoyalBlue"}.</div>
+[azzurro]{style="color: RoyalBlue"}.
+:::
 
 **Adeano (età della Terra: 500 milioni)** La Terra è azzurra, e la
 terraferma è concentrata in un unico grande continente (probabilmente al
@@ -224,10 +226,10 @@ partire l'origine della vita: il dibattito è ancora aperto e ci sono
 diverse ipotesi. I primi microorganismi sono batteri monocellulari
 localizzati nelle profondità del mare, ancora non esposti alla luce del
 Sole, che traggono energia dalle rocce, presso i camini vulcanici
-utilizzando fotosintesi anossigenica (senza ) sfruttando il calore
-generato dal camino e l'acido solfidrico:
+utilizzando fotosintesi anossigenica (senza ossigeno) sfruttando il calore
+generato dal camino e l'acido solfidrico: \
 
-\ce{6 CO2 + 12 H2S -> (C6H12O6) + 6 H2O + 12 S}
+$6 \ce{CO2} + 12 \ce{H2S} -> \ce{C6H12O6} + 6 \ce{H2O} + 12 \ce{S}$
 
 Questi organismi chiamati procarioti, non hanno organi interni e
 potrebbe essere che sfruttino per il proprio sostentamento anche i

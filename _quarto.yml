@@ -86,8 +86,8 @@ book:
     left:
       - text: "Il libro"
         href: index.qmd
-      - text: "Conferenze"
-        href: conferenze.qmd
+      #- text: "Conferenze"
+      #  href: conferenze.qmd
         
     right:
       - icon: linkedin
