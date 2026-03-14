@@ -1,7 +1,9 @@
 ---
 css: main.css
 reference-location: margin
----
+execute:
+  echo: false
+ ---
 
 {{< epigraph "Preserve and cherish the pale blue dot, the only home we've ever known."
  source="Carl Sagan (1934-1996)" >}}
@@ -213,11 +215,11 @@ la Terra dovesse avere un'atmosfera molto densa e ricca di e con una
 condizione (P,T) in grado di sostenere l'acqua allo stato liquido
 (paradosso del Sole debole).
 
-::: {.callout-note}
-## Adeano
+<div style="background-color: #ffe0b2; text-align: justify; padding: 15px; border-radius: 8px; border: 1px solid #ffb74d; color: #333333;">
+<strong>Adeano</strong><br>
 La Terra cambia nuovamente colore, l'immenso oceano le dona un colore
 [azzurro]{style="color: RoyalBlue"}.
-:::
+</div>
 
 **Adeano (età della Terra: 500 milioni)** La Terra è azzurra, e la
 terraferma è concentrata in un unico grande continente (probabilmente al
@@ -282,6 +284,69 @@ raggiunge circa 85% di quella attuale.
 
 ![Timeline della storia della Terra dalle origini al
 Proterozoico.]({{< var cap1.dir >}}/timeline1.png){.lightbox} 
+
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A  plot "
+
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime
+import numpy as np
+
+# 1. Prepare the Data (Date, Event)
+events = [
+    ("2024-01-10", "Project Kickoff"),
+    ("2024-02-15", "Market Research"),
+    ("2024-04-20", "Prototype Ready"),
+    ("2024-05-05", "User Testing"),
+    ("2024-07-12", "Beta Launch"),
+    ("2024-09-30", "Final Release")
+]
+
+# 2. Process dates and labels
+dates = [datetime.strptime(d, "%Y-%m-%d") for d, e in events]
+names = [e for d, e in events]
+
+# 3. Set up alternating levels for labels to prevent overlap
+# (Heights of 5, -5, 3, -3, 1, -1)
+levels = np.tile([-5, 5, -3, 3, -1, 1], int(np.ceil(len(dates)/6)))[:len(dates)]
+
+# 4. Create the plot
+fig, ax = plt.subplots(figsize=(10, 5), constrained_layout=True)
+ax.set_title("2024 Product Roadmap", fontsize=18, pad=20, fontweight='bold')
+
+# Create the baseline
+ax.axhline(0, color="black", linewidth=2, zorder=1)
+
+# Add the stems and markers
+ax.vlines(dates, 0, levels, color="tab:red", linestyle="--")
+ax.scatter(dates, np.zeros_like(dates), color="black", s=100, zorder=3)
+
+# 5. Annotate the events
+for i, (date, name) in enumerate(zip(dates, names)):
+    ax.annotate(name, xy=(date, levels[i]),
+                xytext=(0, 5 if levels[i] > 0 else -5), 
+                textcoords="offset points",
+                ha="center", va="bottom" if levels[i] > 0 else "top",
+                fontsize=11, fontweight='medium',
+                bbox=dict(boxstyle='round,pad=0.3', fc='white', ec='tab:red', alpha=0.8))
+
+# 6. Format the X-axis (Dates)
+ax.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
+ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
+plt.xticks(rotation=45)
+
+# 7. Clean up the styling
+ax.get_yaxis().set_visible(False)
+for spine in ["left", "top", "right"]:
+    ax.spines[spine].set_visible(False)
+
+plt.show()
+
+```
+
 
 ### Proterozoico
 
