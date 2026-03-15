@@ -3,7 +3,7 @@ css: main.css
 reference-location: margin
 execute:
   echo: false
- ---
+---
 
 {{< epigraph "Preserve and cherish the pale blue dot, the only home we've ever known."
  source="Carl Sagan (1934-1996)" >}}
@@ -285,7 +285,6 @@ raggiunge circa 85% di quella attuale.
 ![Timeline della storia della Terra dalle origini al
 Proterozoico.]({{< var cap1.dir >}}/timeline1.png){.lightbox} 
 
-
 ```{python}
 #| label: fig-polar
 #| fig-cap: "A  plot "
@@ -346,7 +345,34 @@ for spine in ["left", "top", "right"]:
 plt.show()
 
 ```
+aaa
 
+```{python}
+#| label: fig-polar2
+#| fig-cap: "A  second plot"
+
+
+import plotly.express as px
+import pandas as pd
+
+# 1. Prepare your data
+df = pd.DataFrame([
+    dict(Task="Phase 1: Research", Start='2024-01-01', Finish='2024-02-15', Resource="Team A"),
+    dict(Task="Phase 2: Design", Start='2024-02-10', Finish='2024-04-01', Resource="Team B"),
+    dict(Task="Phase 3: Build", Start='2024-03-20', Finish='2024-07-15', Resource="Team A"),
+    dict(Task="Phase 4: Launch", Start='2024-07-10', Finish='2024-08-01', Resource="Team C")
+])
+
+# 2. Create the timeline
+fig = px.timeline(df, x_start="Start", x_end="Finish", y="Task", color="Resource",
+                 title="Interactive Project Roadmap")
+
+# 3. Improve the layout (standard for plotly timelines)
+fig.update_yaxes(autorange="reversed") # Put the first task at the top
+fig.update_layout(xaxis_title="Timeline", yaxis_title="")
+
+fig.show()
+```
 
 ### Proterozoico
 
