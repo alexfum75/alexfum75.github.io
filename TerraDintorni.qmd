@@ -286,92 +286,46 @@ raggiunge circa 85% di quella attuale.
 Proterozoico.]({{< var cap1.dir >}}/timeline1.png){.lightbox} 
 
 ```{python}
-#| label: fig-polar
-#| fig-cap: "A  plot "
+#| label: fig-polar3
+#| fig-cap: "A  third plot"
 
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-from datetime import datetime
-import numpy as np
 
-# 1. Prepare the Data (Date, Event)
-events = [
-    ("2024-01-10", "Project Kickoff"),
-    ("2024-02-15", "Market Research"),
-    ("2024-04-20", "Prototype Ready"),
-    ("2024-05-05", "User Testing"),
-    ("2024-07-12", "Beta Launch"),
-    ("2024-09-30", "Final Release")
+# Data: Eon names, start times (Ma - Million years ago), and colors
+# We use Ma (Mega-annum) where 4600 = 4.6 billion years ago
+eons = [
+    {"name": "Hadean", "start": 4600, "end": 4000, "color": "#4D4D4D", "event": "Earth forms"},
+    {"name": "Archean", "start": 4000, "end": 2500, "color": "#FF5733", "event": "First life"},
+    {"name": "Proterozoic", "start": 2500, "end": 541, "color": "#33FF57", "event": "Oxygen rise"},
+    {"name": "Phanerozoic", "start": 541, "end": 0, "color": "#3357FF", "event": "Complex life"}
 ]
 
-# 2. Process dates and labels
-dates = [datetime.strptime(d, "%Y-%m-%d") for d, e in events]
-names = [e for d, e in events]
+fig, ax = plt.subplots(figsize=(10, 4))
 
-# 3. Set up alternating levels for labels to prevent overlap
-# (Heights of 5, -5, 3, -3, 1, -1)
-levels = np.tile([-5, 5, -3, 3, -1, 1], int(np.ceil(len(dates)/6)))[:len(dates)]
+# Create the bars
+for eon in eons:
+    duration = eon["start"] - eon["end"]
+    ax.barh("Earth History", duration, left=eon["end"], color=eon["color"], edgecolor='white', label=eon["name"])
+    
+    # Add eon labels in the middle of the bars
+    mid_point = eon["end"] + (duration / 2)
+    ax.text(mid_point, 0, eon["name"], ha='center', va='center', color='white', fontweight='bold', fontsize=10)
+    
+    # Add major events
+    ax.annotate(eon["event"], xy=(eon["start"], 0.4), xytext=(eon["start"], 0.8),
+                arrowprops=dict(arrowstyle="->", color='black'), ha='center', fontsize=9)
 
-# 4. Create the plot
-fig, ax = plt.subplots(figsize=(10, 5), constrained_layout=True)
-ax.set_title("2024 Product Roadmap", fontsize=18, pad=20, fontweight='bold')
+# Formatting the x-axis
+ax.set_xlim(4600, 0)  # Reversed to show time moving toward the present
+ax.set_xlabel("Millions of Years Ago (Ma)")
+ax.set_title("The Four Eons of Earth's History", fontsize=16, pad=20)
+ax.get_yaxis().set_visible(False) # Hide y-axis since it's just one row
 
-# Create the baseline
-ax.axhline(0, color="black", linewidth=2, zorder=1)
-
-# Add the stems and markers
-ax.vlines(dates, 0, levels, color="tab:red", linestyle="--")
-ax.scatter(dates, np.zeros_like(dates), color="black", s=100, zorder=3)
-
-# 5. Annotate the events
-for i, (date, name) in enumerate(zip(dates, names)):
-    ax.annotate(name, xy=(date, levels[i]),
-                xytext=(0, 5 if levels[i] > 0 else -5), 
-                textcoords="offset points",
-                ha="center", va="bottom" if levels[i] > 0 else "top",
-                fontsize=11, fontweight='medium',
-                bbox=dict(boxstyle='round,pad=0.3', fc='white', ec='tab:red', alpha=0.8))
-
-# 6. Format the X-axis (Dates)
-ax.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
-ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
-plt.xticks(rotation=45)
-
-# 7. Clean up the styling
-ax.get_yaxis().set_visible(False)
-for spine in ["left", "top", "right"]:
-    ax.spines[spine].set_visible(False)
+# Clean up the look
+plt.tight_layout()
+plt.grid(axis='x', linestyle='--', alpha=0.5)
 
 plt.show()
-
-```
-aaa
-
-```{python}
-#| label: fig-polar2
-#| fig-cap: "A  second plot"
-
-
-import plotly.express as px
-import pandas as pd
-
-# 1. Prepare your data
-df = pd.DataFrame([
-    dict(Task="Phase 1: Research", Start='2024-01-01', Finish='2024-02-15', Resource="Team A"),
-    dict(Task="Phase 2: Design", Start='2024-02-10', Finish='2024-04-01', Resource="Team B"),
-    dict(Task="Phase 3: Build", Start='2024-03-20', Finish='2024-07-15', Resource="Team A"),
-    dict(Task="Phase 4: Launch", Start='2024-07-10', Finish='2024-08-01', Resource="Team C")
-])
-
-# 2. Create the timeline
-fig = px.timeline(df, x_start="Start", x_end="Finish", y="Task", color="Resource",
-                 title="Interactive Project Roadmap")
-
-# 3. Improve the layout (standard for plotly timelines)
-fig.update_yaxes(autorange="reversed") # Put the first task at the top
-fig.update_layout(xaxis_title="Timeline", yaxis_title="")
-
-fig.show()
 ```
 
 ### Proterozoico
