@@ -105,9 +105,9 @@ book:
 format:
   html:
     grid:
-      sidebar-width: 300px
-      body-width: 800px
-      margin-width: 400px
+      sidebar-width: 280px  # default 250px
+      body-width: 950px # default 800px
+      margin-width: 200px # default 250px
       gutter-width: 1.5rem  
     toc: true
     toc-location: right

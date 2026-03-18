@@ -3,6 +3,11 @@ css: main.css
 reference-location: margin
 execute:
   echo: false
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
 ---
 
 {{< epigraph "Preserve and cherish the pale blue dot, the only home we've ever known."
@@ -10,8 +15,8 @@ execute:
 
 ## Storia della Terra
 
-Terra, quel piccolo puntino blu sospeso nella vastità buia dello spazio,
-è la nostra casa da circa 2,5 milioni di anni (dalla comparsa del genere
+La Terra, quel piccolo puntino blu sospeso nella vastità buia dello spazio,
+è casa nostra da circa 2,5 milioni di anni (dalla comparsa del genere
 *Homo Habilis*) ed è quindi logico e naturale iniziare il nostro
 percorso astronomico da essa.
 Le stime più recenti sull'età del nostro pianeta portano un valore di
@@ -296,11 +301,11 @@ import matplotlib.pyplot as plt
 eons = [
     {"name": "Hadean", "start": 4600, "end": 4000, "color": "#4D4D4D", "event": "Earth forms"},
     {"name": "Archean", "start": 4000, "end": 2500, "color": "#FF5733", "event": "First life"},
-    {"name": "Proterozoic", "start": 2500, "end": 541, "color": "#33FF57", "event": "Oxygen rise"},
-    {"name": "Phanerozoic", "start": 541, "end": 0, "color": "#3357FF", "event": "Complex life"}
+    {"name": "Proterozoic", "start": 2500, "end": 541, "color": "#33FF57", "event": "Oxygen rise"}
+    #{"name": "Phanerozoic", "start": 541, "end": 0, "color": "#3357FF", "event": "Complex life"}
 ]
 
-fig, ax = plt.subplots(figsize=(10, 4))
+fig, ax = plt.subplots(figsize=(12, 4))
 
 # Create the bars
 for eon in eons:
@@ -316,7 +321,7 @@ for eon in eons:
                 arrowprops=dict(arrowstyle="->", color='black'), ha='center', fontsize=9)
 
 # Formatting the x-axis
-ax.set_xlim(4600, 0)  # Reversed to show time moving toward the present
+ax.set_xlim(4600, 541)  # Reversed to show time moving toward the present
 ax.set_xlabel("Millions of Years Ago (Ma)")
 ax.set_title("The Four Eons of Earth's History", fontsize=16, pad=20)
 ax.get_yaxis().set_visible(False) # Hide y-axis since it's just one row
