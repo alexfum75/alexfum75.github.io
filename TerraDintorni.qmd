@@ -305,7 +305,7 @@ eons = [
     #{"name": "Phanerozoic", "start": 541, "end": 0, "color": "#3357FF", "event": "Complex life"}
 ]
 
-fig, ax = plt.subplots(figsize=(12, 4))
+fig, ax = plt.subplots(figsize=(8, 4))
 
 # Create the bars
 for eon in eons:
