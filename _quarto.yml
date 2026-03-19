@@ -71,8 +71,8 @@ book:
     - part: "Astronautica"  
       chapters:
       - Sovietici.qmd
-      - ProgrammaArtemis.qmd
       - ProgrammaApollo.qmd
+      - ProgrammaArtemis.qmd      
       - AndiamoMarte.qmd      
     
     - glossario.qmd

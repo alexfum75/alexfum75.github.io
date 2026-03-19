@@ -290,12 +290,6 @@ raggiunge circa 85% di quella attuale.
 ![Timeline della storia della Terra dalle origini al
 Proterozoico.]({{< var cap1.dir >}}/timeline1.png){.lightbox} 
 
-```{python}
-#| label: run-external-script
-
-%run python_script/eons.py
-```
-
 ### Proterozoico
 
 **Età della Terra: 2 miliardi.** La vita sulla Terra evolve: con il
