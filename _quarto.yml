@@ -44,6 +44,8 @@ book:
 
     - introduzione.qmd
     
+    - carosello.qmd
+    
     - part: "Vicino a noi"
       chapters:
         - TerraDintorni.qmd
