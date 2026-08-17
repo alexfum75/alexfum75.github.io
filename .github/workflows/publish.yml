@@ -5,7 +5,8 @@ on:
 
 permissions:
   contents: write
-  
+  pages: write
+ 
 name: Quarto Publish
 
 jobs:
@@ -21,6 +22,11 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configura Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Install Python and Dependencies
         uses: actions/setup-python@v5
